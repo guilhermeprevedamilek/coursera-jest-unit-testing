@@ -1,6 +1,6 @@
-const fetch = require('node-fetch')
+// const fetch = require('node-fetch')
 
-const getPeople = () => {
+const getPeople = (fetch) => {
   return fetch('https://swapi.dev/api/people')
     .then((res) => res.json())
     .then((data) => {
